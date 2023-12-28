@@ -10,7 +10,8 @@ import { CoinbaseWalletConnector } from 'use-wagmi/connectors/coinbaseWallet'
 import { WalletConnectConnector } from 'use-wagmi/connectors/walletConnect'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const projectId = 'ccf7d8c5ba76b739964610f2e09e2ba6'
+  // Get a Project ID at https://cloud.walletconnect.com
+  const projectId = 'YOUR_PROJECT_ID'
 
   const { chains, publicClient } = configureChains(
     [avalanche, goerli, mainnet, optimism],
